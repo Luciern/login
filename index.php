@@ -1,16 +1,6 @@
 <?php
 include ("conexion.php"); 
-$nombre = $_POST["nombre"]; 
-$password = $_POST["contra"]; 
 
-$consulta = "SELECT * FROM usuario WHERE nombre = \''.$nombre.'\' AND contrasinal = \''.$password.'\'";
-
-if(!$consulta){ 
-    echo "usuario no existe"; 
-} 
-else{ 
-    print "Bienvenido"; 
-} 
 
 ?>
 <!DOCTYPE html>
